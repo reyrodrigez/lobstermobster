@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book a table</title>
+<meta charset=utf-8 />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+   <form action="#" class="booking new">
+     <h1>Mobster<span class="and">&amp;</span>Lobster</h1>
+     <fieldset>
+     <legend>Book a table</legend>
+      <input id="id" name="id" type="hidden" value="1">
+      <input name="booking_status" type="hidden" value="booked">
+    <div class="field">
+      <label for="firstname">First Name:*</label>
+      <input type="text" id="firstname" name="firstname" data-validate="required string" />
+    </div>
+    <div class="field">
+      <label for="lastname">Last Name:*</label>
+      <input type="text" id="lastname" name="lastname" data-validate="required string" />
+    </div>
+    <div class="field">
+      <label for="diningdate">Dining Date:*</label>
+      <input type="date"  id="diningdate" name="diningdate" data-validate="required" />
+    </div>
+    <div class="field">
+      <label for="hour">Dinig Time:</label>
+      <select id="hour" name="hour">
+        <option value="12">12</option>
+        <option value="12">13</option>
+        <option value="12">14</option>
+        <option value="12">15</option>
+        <option value="12">16</option>
+        <option value="12">17</option>
+        <option value="12">18</option>
+        <option value="12">19</option>
+        <option value="12">20</option>
+        <option value="12">21</option>
+        <option value="12">22</option>
+      </select>
+      <select name="minute">
+        <option value="00">00</option>
+        <option value="15">15</option>
+        <option value="30">30</option>
+        <option value="45">45</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="covers">Number of Covers:</label>
+      <input type="number" id="covers" name="covers" data-validate="required number" />
+    </div>
+    <div class="field">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" data-validate="phone" />
+    </div>
+    <div class="field">
+      <label for="email">Email:*</label>
+      <input type="email" id="email" name="email" data-validate="required email" />
+    </div>
+    <input type="submit" value="book it!" />
+    <p class="note">*Required fields</p>
+    </fieldset>
+  </form>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
+  
+  
